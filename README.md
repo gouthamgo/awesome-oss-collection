@@ -39,6 +39,13 @@ Each entry documents:
 
 ---
 
+## Highlights
+
+### [Handy](./speech-to-text/README.md#handy) ⭐ 18.1k
+Offline speech-to-text for any text field on your computer. Hold a keyboard shortcut, speak, release — your words appear wherever your cursor is. Built on Whisper + Rust + Tauri. No cloud, no subscription.
+
+---
+
 ## Recent Additions
 
 | Project | Category | Stars | Added |
