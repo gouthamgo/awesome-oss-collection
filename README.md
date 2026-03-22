@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **10 categories · 11 projects** — growing over time
+> **15 categories · 20 projects** — growing over time
 
 ```
 Collection Hub
@@ -29,8 +29,22 @@ Collection Hub
 │   └── LiteLLM (39.8k ⭐) — one interface for 100+ LLMs
 ├── 🌐 Web Browsers
 │   └── Ladybird (61.4k ⭐) — first independent browser engine in decades
-└── 📱 On-Device AI
-    └── RunAnywhere SDKs (10.3k ⭐) — local AI for iOS, Android, Flutter, Web
+├── 📱 On-Device AI
+│   └── RunAnywhere SDKs (10.3k ⭐) — local AI for iOS, Android, Flutter, Web
+├── 🧠 Local LLM
+│   ├── Ollama (166k ⭐) — run any LLM locally with one command
+│   ├── LlamaFile (23.9k ⭐) — LLM as a single executable
+│   └── llm (11.4k ⭐) — CLI and Python library for any LLM
+├── 🕸️ Agent Frameworks
+│   ├── CrewAI (46.8k ⭐) — multi-agent with roles, goals, backstories
+│   ├── DSPy (33k ⭐) — program LLMs instead of prompting them
+│   └── DeerFlow (32.6k ⭐) — deployable super agent platform with sandbox + memory
+├── 🏗️ LLM App Builder
+│   └── Dify (134k ⭐) — visual workflow builder for LLM applications
+├── 🕷️ Web Scraping
+│   └── Firecrawl (96.1k ⭐) — turn any website into LLM-ready data
+└── 📚 RAG Frameworks
+    └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
 ```
 
 ---
@@ -49,6 +63,11 @@ Collection Hub
 | [🔀 llm-gateway](./llm-gateway/README.md) | 1 | Unified proxy and SDK for routing across 100+ LLM providers |
 | [🌐 web-browsers](./web-browsers/README.md) | 1 | Independent browser engines built from scratch |
 | [📱 on-device-ai](./on-device-ai/README.md) | 1 | Run AI locally on mobile and edge — no cloud required |
+| [🧠 local-llm](./local-llm/README.md) | 3 | Run open-source LLMs locally — REST API, single executable, CLI |
+| [🕸️ agent-frameworks](./agent-frameworks/README.md) | 3 | Frameworks for building and orchestrating AI agents |
+| [🏗️ llm-app-builder](./llm-app-builder/README.md) | 1 | Visual platforms for building and deploying LLM applications |
+| [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
+| [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
 
 ---
 
@@ -100,12 +119,48 @@ The first truly independent browser engine in decades — zero shared code with 
 ### [RunAnywhere SDKs](./on-device-ai/README.md#runanywhere-sdks) ⭐ 10.3k
 Multi-platform SDKs for on-device AI across iOS, Android, Flutter, React Native, and Web. Wraps llama.cpp and ONNX into idiomatic developer APIs — LLMs, Whisper STT, TTS, vision, and full voice pipelines, all running locally with zero data transmission.
 
+### [Ollama](./local-llm/README.md#ollama) ⭐ 166k
+Run any open-source LLM locally with one command. Pull Llama, Mistral, Gemma, Qwen and 100+ models, get an OpenAI-compatible REST API instantly. The tool that made local AI accessible to everyone — 166k stars is the highest in this collection.
+
+### [LlamaFile](./local-llm/README.md#llamafile) ⭐ 23.9k
+Mozilla-backed project that bundles an LLM and its runtime into a single executable. Download one file, run it anywhere — macOS, Windows, Linux, FreeBSD, x86 or ARM — with zero setup. The "LLM as binary" concept is genuinely novel.
+
+### [llm](./local-llm/README.md#llm) ⭐ 11.4k
+Simon Willison's CLI and Python library for querying any LLM — cloud or local. Logs every prompt and response to SQLite. Simple, composable, Unix-philosophy tool for humans at the terminal.
+
+### [CrewAI](./agent-frameworks/README.md#crewai) ⭐ 46.8k
+Multi-agent framework where agents have roles, goals, and backstories — maps to how humans think about teams. Define a crew, assign tasks, let agents collaborate and delegate. MIT licensed, intuitive enough to ship in an afternoon.
+
+### [DSPy](./agent-frameworks/README.md#dspy) ⭐ 33k
+Stanford NLP's framework for programming LLMs rather than prompting them. Define modules with typed signatures, chain them, then let optimizers automatically tune prompts and few-shot examples against your metric.
+
+### [DeerFlow](./agent-frameworks/README.md#deerflow) ⭐ 32.6k
+ByteDance's deployable super agent platform. Spin up with Docker and get a full-stack web UI where agents research, write reports, generate slides, and execute code in isolated sandboxes — with long-term memory and Slack/Telegram/Feishu integration. Built on LangGraph, MIT licensed, hit #1 GitHub Trending at v2.0.
+
+### [Dify](./llm-app-builder/README.md#dify) ⭐ 134k
+Open-source LLM app platform with visual workflow builder, RAG, agents, and observability. Drag-and-drop pipelines deployable as APIs. One of the highest-starred AI infrastructure projects in existence.
+
+### [Firecrawl](./web-scraping/README.md#firecrawl) ⭐ 96.1k
+Turn any website into clean Markdown or structured JSON for LLM pipelines. Handles JS rendering, auth, rate limits, and anti-bot measures. Output designed for AI consumption — 96.1k stars with only 52 open issues.
+
+### [LightRAG](./rag-frameworks/README.md#lightrag) ⭐ 29.8k
+RAG with a knowledge graph layer — extracts entities and relationships from documents then queries both graph and vector store together. Answers questions about *connections* between concepts, not just surface similarity. MIT, LLM-agnostic, multiple storage backends.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [DeerFlow](./agent-frameworks/README.md) | Agent Frameworks | 32.6k ⭐ | 2026-03 |
+| [LightRAG](./rag-frameworks/README.md) | RAG Frameworks | 29.8k ⭐ | 2026-03 |
+| [Firecrawl](./web-scraping/README.md) | Web Scraping | 96.1k ⭐ | 2026-03 |
+| [Dify](./llm-app-builder/README.md) | LLM App Builder | 134k ⭐ | 2026-03 |
+| [CrewAI](./agent-frameworks/README.md) | Agent Frameworks | 46.8k ⭐ | 2026-03 |
+| [DSPy](./agent-frameworks/README.md) | Agent Frameworks | 33k ⭐ | 2026-03 |
+| [Ollama](./local-llm/README.md) | Local LLM | 166k ⭐ | 2026-03 |
+| [LlamaFile](./local-llm/README.md) | Local LLM | 23.9k ⭐ | 2026-03 |
+| [llm](./local-llm/README.md) | Local LLM | 11.4k ⭐ | 2026-03 |
 | [Daily Stock Analysis](./financial-analysis/README.md) | Financial Analysis | 24k ⭐ | 2026-03 |
 | [RunAnywhere SDKs](./on-device-ai/README.md) | On-Device AI | 10.3k ⭐ | 2026-03 |
 | [Ladybird](./web-browsers/README.md) | Web Browsers | 61.4k ⭐ | 2026-03 |
