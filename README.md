@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **15 categories · 20 projects** — growing over time
+> **16 categories · 21 projects** — growing over time
 
 ```
 Collection Hub
@@ -43,8 +43,10 @@ Collection Hub
 │   └── Dify (134k ⭐) — visual workflow builder for LLM applications
 ├── 🕷️ Web Scraping
 │   └── Firecrawl (96.1k ⭐) — turn any website into LLM-ready data
-└── 📚 RAG Frameworks
-    └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
+├── 📚 RAG Frameworks
+│   └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
+└── 🏠 Home Automation
+    └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
 ```
 
 ---
@@ -68,6 +70,7 @@ Collection Hub
 | [🏗️ llm-app-builder](./llm-app-builder/README.md) | 1 | Visual platforms for building and deploying LLM applications |
 | [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
 | [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
+| [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
 
 ---
 
@@ -146,12 +149,16 @@ Turn any website into clean Markdown or structured JSON for LLM pipelines. Handl
 ### [LightRAG](./rag-frameworks/README.md#lightrag) ⭐ 29.8k
 RAG with a knowledge graph layer — extracts entities and relationships from documents then queries both graph and vector store together. Answers questions about *connections* between concepts, not just surface similarity. MIT, LLM-agnostic, multiple storage backends.
 
+### [Home Assistant](./home-automation/README.md#home-assistant) ⭐ 85.7k
+The definitive self-hosted smart home platform. Connect 3,000+ device integrations — Zigbee, Z-Wave, Matter, Philips Hue, Apple HomeKit and more — through a unified local interface. 4,672 contributors, monthly releases, Apache 2.0. Your home stays yours.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Home Assistant](./home-automation/README.md) | Home Automation | 85.7k ⭐ | 2026-03 |
 | [DeerFlow](./agent-frameworks/README.md) | Agent Frameworks | 32.6k ⭐ | 2026-03 |
 | [LightRAG](./rag-frameworks/README.md) | RAG Frameworks | 29.8k ⭐ | 2026-03 |
 | [Firecrawl](./web-scraping/README.md) | Web Scraping | 96.1k ⭐ | 2026-03 |
