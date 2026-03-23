@@ -1,0 +1,20 @@
+# 🛠️ AI Dev Tools
+
+Tools that augment the software development workflow with AI — spec generation, planning, implementation, and code automation.
+
+← [Back to collection](../README.md)
+
+---
+
+### [Spec Kit](https://github.com/github/spec-kit) ⭐ 81.1k
+
+**Turn specifications into working software — spec-driven development with AI.**
+
+A CLI toolkit from GitHub that implements Spec-Driven Development: a structured workflow where you write a human-readable specification first, then use AI to generate a plan, break it into tasks, and implement each one. Install the `specify` CLI, and a set of slash commands (`/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`) guide you through the entire cycle inside your AI coding agent of choice — Claude Code, Cursor, GitHub Copilot, Gemini, and 20+ others.
+
+**Stack:** Python (`specify` CLI), git-native, works with any AI coding agent
+**License:** MIT
+
+**Why it's notable:** Spec Kit addresses the biggest failure mode in AI-assisted development: jumping straight to implementation without a clear specification. By making the spec the source of truth — executable, versioned, and agent-readable — it brings engineering discipline to vibe-coding workflows. GitHub built this internally before open-sourcing it, and 81.1k stars in its first months signals strong developer resonance. It's not a framework you adopt once and forget; it's a workflow pattern that scales from solo projects to team codebases, and the multi-agent support means it's not locked to any single AI tool.
+
+---

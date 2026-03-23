@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **16 categories · 21 projects** — growing over time
+> **17 categories · 22 projects** — growing over time
 
 ```
 Collection Hub
@@ -45,8 +45,10 @@ Collection Hub
 │   └── Firecrawl (96.1k ⭐) — turn any website into LLM-ready data
 ├── 📚 RAG Frameworks
 │   └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
-└── 🏠 Home Automation
-    └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
+├── 🏠 Home Automation
+│   └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
+└── 🛠️ AI Dev Tools
+    └── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
 ```
 
 ---
@@ -71,6 +73,7 @@ Collection Hub
 | [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
 | [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
+| [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 1 | AI-augmented development workflows — spec, plan, implement |
 
 ---
 
@@ -152,12 +155,16 @@ RAG with a knowledge graph layer — extracts entities and relationships from do
 ### [Home Assistant](./home-automation/README.md#home-assistant) ⭐ 85.7k
 The definitive self-hosted smart home platform. Connect 3,000+ device integrations — Zigbee, Z-Wave, Matter, Philips Hue, Apple HomeKit and more — through a unified local interface. 4,672 contributors, monthly releases, Apache 2.0. Your home stays yours.
 
+### [Spec Kit](./ai-dev-tools/README.md#spec-kit) ⭐ 81.1k
+GitHub's CLI toolkit for Spec-Driven Development. Write a spec first, then slash commands guide your AI coding agent through planning, task breakdown, and implementation. Works with Claude Code, Cursor, Copilot, Gemini, and 20+ others. Fixes the biggest failure mode of AI-assisted development: jumping to code before the problem is clearly defined.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Spec Kit](./ai-dev-tools/README.md) | AI Dev Tools | 81.1k ⭐ | 2026-03 |
 | [Home Assistant](./home-automation/README.md) | Home Automation | 85.7k ⭐ | 2026-03 |
 | [DeerFlow](./agent-frameworks/README.md) | Agent Frameworks | 32.6k ⭐ | 2026-03 |
 | [LightRAG](./rag-frameworks/README.md) | RAG Frameworks | 29.8k ⭐ | 2026-03 |
