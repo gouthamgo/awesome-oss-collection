@@ -1,0 +1,60 @@
+name: Enrich & Merge to Main
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Enrich entries and update root README
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/enrich.py
+
+      - name: Commit enriched content
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Nothing to commit — entries already complete."
+          else
+            git commit -m "enrich: auto-enrich new entries and sync root README"
+            git push origin dev
+          fi
+
+      - name: Open PR and auto-merge to main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Create PR (skip if one already exists for this branch)
+          gh pr create \
+            --base main \
+            --head dev \
+            --title "$(git log -1 --pretty=%s)" \
+            --body "Auto-enriched by CI: descriptions filled in and root README synced." \
+            || echo "PR already exists or nothing to merge."
+
+          # Merge immediately (requires GITHUB_TOKEN with sufficient permissions)
+          gh pr merge dev --squash --auto --delete-branch=false \
+            || echo "Auto-merge not available — PR created for manual review."
