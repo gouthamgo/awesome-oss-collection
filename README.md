@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **17 categories · 22 projects** — growing over time
+> **17 categories · 23 projects** — growing over time
 
 ```
 Collection Hub
@@ -48,7 +48,8 @@ Collection Hub
 ├── 🏠 Home Automation
 │   └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
 └── 🛠️ AI Dev Tools
-    └── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
+    ├── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
+    └── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
 ```
 
 ---
@@ -73,7 +74,7 @@ Collection Hub
 | [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
 | [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
-| [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 1 | AI-augmented development workflows — spec, plan, implement |
+| [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 2 | AI-augmented development workflows — spec, plan, implement |
 
 ---
 
@@ -158,12 +159,16 @@ The definitive self-hosted smart home platform. Connect 3,000+ device integratio
 ### [Spec Kit](./ai-dev-tools/README.md#spec-kit) ⭐ 81.1k
 GitHub's CLI toolkit for Spec-Driven Development. Write a spec first, then slash commands guide your AI coding agent through planning, task breakdown, and implementation. Works with Claude Code, Cursor, Copilot, Gemini, and 20+ others. Fixes the biggest failure mode of AI-assisted development: jumping to code before the problem is clearly defined.
 
+### [Agent Orchestrator](./ai-dev-tools/README.md#agent-orchestrator) ⭐ 5.3k
+Composio's fleet manager for parallel AI coding agents. Each agent gets an isolated git worktree and branch, autonomously handles code, CI failures, and PR creation, while you supervise from a unified dashboard. Pluggable backends (Claude Code, Codex, Aider) and runtimes (tmux, Docker, K8s). Treats your issue backlog like a parallelisable CI pipeline.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Agent Orchestrator](./ai-dev-tools/README.md) | AI Dev Tools | 5.3k ⭐ | 2026-03 |
 | [Spec Kit](./ai-dev-tools/README.md) | AI Dev Tools | 81.1k ⭐ | 2026-03 |
 | [Home Assistant](./home-automation/README.md) | Home Automation | 85.7k ⭐ | 2026-03 |
 | [DeerFlow](./agent-frameworks/README.md) | Agent Frameworks | 32.6k ⭐ | 2026-03 |
