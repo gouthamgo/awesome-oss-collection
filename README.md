@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **17 categories · 23 projects** — growing over time
+> **18 categories · 24 projects** — growing over time
 
 ```
 Collection Hub
@@ -47,9 +47,11 @@ Collection Hub
 │   └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
 ├── 🏠 Home Automation
 │   └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
-└── 🛠️ AI Dev Tools
-    ├── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
-    └── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
+├── 🛠️ AI Dev Tools
+│   ├── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
+│   └── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
+└── 🧪 Testing
+    └── Keploy (16.6k ⭐) — auto-generate tests from real traffic via eBPF, zero code changes
 ```
 
 ---
@@ -75,6 +77,7 @@ Collection Hub
 | [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
 | [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 2 | AI-augmented development workflows — spec, plan, implement |
+| [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
 
 ---
 
@@ -162,12 +165,16 @@ GitHub's CLI toolkit for Spec-Driven Development. Write a spec first, then slash
 ### [Agent Orchestrator](./ai-dev-tools/README.md#agent-orchestrator) ⭐ 5.3k
 Composio's fleet manager for parallel AI coding agents. Each agent gets an isolated git worktree and branch, autonomously handles code, CI failures, and PR creation, while you supervise from a unified dashboard. Pluggable backends (Claude Code, Codex, Aider) and runtimes (tmux, Docker, K8s). Treats your issue backlog like a parallelisable CI pipeline.
 
+### [Keploy](./testing/README.md#keploy) ⭐ 16.6k
+eBPF-powered test generation from real traffic — no SDK, no instrumentation, no code changes. Records HTTP calls, database queries, and message queue events at the network layer, then replays them as integration tests with mocked infrastructure. Works with any language or framework, drops into GitHub Actions or Kubernetes CI. Apache 2.0.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Keploy](./testing/README.md) | Testing | 16.6k ⭐ | 2026-03 |
 | [Agent Orchestrator](./ai-dev-tools/README.md) | AI Dev Tools | 5.3k ⭐ | 2026-03 |
 | [Spec Kit](./ai-dev-tools/README.md) | AI Dev Tools | 81.1k ⭐ | 2026-03 |
 | [Home Assistant](./home-automation/README.md) | Home Automation | 85.7k ⭐ | 2026-03 |
