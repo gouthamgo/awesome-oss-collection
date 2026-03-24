@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **18 categories · 24 projects** — growing over time
+> **19 categories · 25 projects** — growing over time
 
 ```
 Collection Hub
@@ -50,8 +50,10 @@ Collection Hub
 ├── 🛠️ AI Dev Tools
 │   ├── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
 │   └── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
-└── 🧪 Testing
-    └── Keploy (16.6k ⭐) — auto-generate tests from real traffic via eBPF, zero code changes
+├── 🧪 Testing
+│   └── Keploy (16.6k ⭐) — auto-generate tests from real traffic via eBPF, zero code changes
+└── 🔐 Security Testing
+    └── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
 ```
 
 ---
@@ -78,6 +80,7 @@ Collection Hub
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
 | [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 2 | AI-augmented development workflows — spec, plan, implement |
 | [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
+| [🔐 security-testing](./security-testing/README.md) | 1 | Autonomous AI agents for penetration testing and vulnerability validation |
 
 ---
 
@@ -168,12 +171,16 @@ Composio's fleet manager for parallel AI coding agents. Each agent gets an isola
 ### [Keploy](./testing/README.md#keploy) ⭐ 16.6k
 eBPF-powered test generation from real traffic — no SDK, no instrumentation, no code changes. Records HTTP calls, database queries, and message queue events at the network layer, then replays them as integration tests with mocked infrastructure. Works with any language or framework, drops into GitHub Actions or Kubernetes CI. Apache 2.0.
 
+### [Strix](./security-testing/README.md#strix) ⭐ 21.3k
+Autonomous AI agents for penetration testing — they don't just find potential vulnerabilities, they validate each one through an actual proof-of-concept. Built on Nuclei, Caido, and Playwright with LiteLLM for LLM-agnostic intelligence. pip-installable, CI/CD-compatible, Apache 2.0.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Strix](./security-testing/README.md) | Security Testing | 21.3k ⭐ | 2026-03 |
 | [Keploy](./testing/README.md) | Testing | 16.6k ⭐ | 2026-03 |
 | [Agent Orchestrator](./ai-dev-tools/README.md) | AI Dev Tools | 5.3k ⭐ | 2026-03 |
 | [Spec Kit](./ai-dev-tools/README.md) | AI Dev Tools | 81.1k ⭐ | 2026-03 |
