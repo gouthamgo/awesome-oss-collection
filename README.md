@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **19 categories · 25 projects** — growing over time
+> **20 categories · 26 projects** — growing over time
 
 ```
 Collection Hub
@@ -52,8 +52,10 @@ Collection Hub
 │   └── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
 ├── 🧪 Testing
 │   └── Keploy (16.6k ⭐) — auto-generate tests from real traffic via eBPF, zero code changes
-└── 🔐 Security Testing
-    └── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
+├── 🔐 Security Testing
+│   └── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
+└── 🎤 Voice Cloning
+    └── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
 ```
 
 ---
@@ -81,6 +83,7 @@ Collection Hub
 | [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 2 | AI-augmented development workflows — spec, plan, implement |
 | [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
 | [🔐 security-testing](./security-testing/README.md) | 1 | Autonomous AI agents for penetration testing and vulnerability validation |
+| [🎤 voice-cloning](./voice-cloning/README.md) | 1 | Local voice cloning — high-fidelity 48kHz output, no cloud required |
 
 ---
 
@@ -174,12 +177,16 @@ eBPF-powered test generation from real traffic — no SDK, no instrumentation, n
 ### [Strix](./security-testing/README.md#strix) ⭐ 21.3k
 Autonomous AI agents for penetration testing — they don't just find potential vulnerabilities, they validate each one through an actual proof-of-concept. Built on Nuclei, Caido, and Playwright with LiteLLM for LLM-agnostic intelligence. pip-installable, CI/CD-compatible, Apache 2.0.
 
+### [LuxTTS](./voice-cloning/README.md#luxtts) ⭐ 3.2k
+Local voice cloning with 48kHz output at 150x realtime — on ~1GB VRAM. Clone any voice from a short reference clip, runs on CUDA, CPU, or Apple MPS. Apache 2.0 with no model licence restrictions, unlike most TTS tools that use CC-BY-NC on their weights.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [LuxTTS](./voice-cloning/README.md) | Voice Cloning | 3.2k ⭐ | 2026-03 |
 | [Strix](./security-testing/README.md) | Security Testing | 21.3k ⭐ | 2026-03 |
 | [Keploy](./testing/README.md) | Testing | 16.6k ⭐ | 2026-03 |
 | [Agent Orchestrator](./ai-dev-tools/README.md) | AI Dev Tools | 5.3k ⭐ | 2026-03 |
