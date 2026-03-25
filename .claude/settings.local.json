@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"claude\\\\|Claude\\\\|contributor\" /Users/ganguly/Documents/CC/awesome-oss-collection --include=*.json -l)",
+      "Bash(gh auth:*)",
+      "Bash(gh api:*)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(c[''''login'''']\\) for c in data]\")",
+      "Bash(find /Users/ganguly/Documents/CC/awesome-oss-collection -maxdepth 2 -type f -name *.json -o -name *.yaml -o -name *.yml -o -name .gitignore)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

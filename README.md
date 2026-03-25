@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **20 categories · 26 projects** — growing over time
+> **22 categories · 32 projects** — growing over time
 
 ```
 Collection Hub
@@ -34,17 +34,24 @@ Collection Hub
 ├── 🧠 Local LLM
 │   ├── Ollama (166k ⭐) — run any LLM locally with one command
 │   ├── LlamaFile (23.9k ⭐) — LLM as a single executable
-│   └── llm (11.4k ⭐) — CLI and Python library for any LLM
+│   ├── llm (11.4k ⭐) — CLI and Python library for any LLM
+│   └── vLLM (74.3k ⭐) — production LLM serving with PagedAttention
 ├── 🕸️ Agent Frameworks
 │   ├── CrewAI (46.8k ⭐) — multi-agent with roles, goals, backstories
 │   ├── DSPy (33k ⭐) — program LLMs instead of prompting them
 │   └── DeerFlow (32.6k ⭐) — deployable super agent platform with sandbox + memory
 ├── 🏗️ LLM App Builder
-│   └── Dify (134k ⭐) — visual workflow builder for LLM applications
+│   ├── Dify (134k ⭐) — visual workflow builder for LLM applications
+│   └── AnythingLLM (56.7k ⭐) — self-hosted AI workspace, chat with your docs
 ├── 🕷️ Web Scraping
 │   └── Firecrawl (96.1k ⭐) — turn any website into LLM-ready data
 ├── 📚 RAG Frameworks
 │   └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
+├── 🗄️ Vector Databases
+│   ├── Qdrant (29.8k ⭐) — Rust-based vector DB, fast and self-hostable
+│   └── Milvus (43.5k ⭐) — distributed vector DB for billions of vectors
+├── 📊 LLM Evaluation
+│   └── Ragas (13.1k ⭐) — evaluate RAG pipelines with objective metrics
 ├── 🏠 Home Automation
 │   └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
 ├── 🛠️ AI Dev Tools
@@ -53,7 +60,8 @@ Collection Hub
 ├── 🧪 Testing
 │   └── Keploy (16.6k ⭐) — auto-generate tests from real traffic via eBPF, zero code changes
 ├── 🔐 Security Testing
-│   └── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
+│   ├── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
+│   └── Garak (7.4k ⭐) — LLM vulnerability scanner for jailbreaks and prompt injection
 └── 🎤 Voice Cloning
     └── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
 ```
@@ -74,15 +82,17 @@ Collection Hub
 | [🔀 llm-gateway](./llm-gateway/README.md) | 1 | Unified proxy and SDK for routing across 100+ LLM providers |
 | [🌐 web-browsers](./web-browsers/README.md) | 1 | Independent browser engines built from scratch |
 | [📱 on-device-ai](./on-device-ai/README.md) | 1 | Run AI locally on mobile and edge — no cloud required |
-| [🧠 local-llm](./local-llm/README.md) | 3 | Run open-source LLMs locally — REST API, single executable, CLI |
+| [🧠 local-llm](./local-llm/README.md) | 4 | Run open-source LLMs locally — personal use to production serving |
 | [🕸️ agent-frameworks](./agent-frameworks/README.md) | 3 | Frameworks for building and orchestrating AI agents |
-| [🏗️ llm-app-builder](./llm-app-builder/README.md) | 1 | Visual platforms for building and deploying LLM applications |
+| [🏗️ llm-app-builder](./llm-app-builder/README.md) | 2 | Platforms for building and deploying LLM-powered applications |
 | [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
 | [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
+| [🗄️ vector-databases](./vector-databases/README.md) | 2 | Self-hosted vector databases for semantic search and AI memory |
+| [📊 llm-evaluation](./llm-evaluation/README.md) | 1 | Evaluate RAG pipelines and LLM outputs with objective metrics |
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
 | [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 2 | AI-augmented development workflows — spec, plan, implement |
 | [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
-| [🔐 security-testing](./security-testing/README.md) | 1 | Autonomous AI agents for penetration testing and vulnerability validation |
+| [🔐 security-testing](./security-testing/README.md) | 2 | Pen testing for apps and LLM vulnerability scanning |
 | [🎤 voice-cloning](./voice-cloning/README.md) | 1 | Local voice cloning — high-fidelity 48kHz output, no cloud required |
 
 ---
@@ -144,6 +154,9 @@ Mozilla-backed project that bundles an LLM and its runtime into a single executa
 ### [llm](./local-llm/README.md#llm) ⭐ 11.4k
 Simon Willison's CLI and Python library for querying any LLM — cloud or local. Logs every prompt and response to SQLite. Simple, composable, Unix-philosophy tool for humans at the terminal.
 
+### [vLLM](./local-llm/README.md#vllm) ⭐ 74.3k
+The industry standard for production LLM serving. PagedAttention eliminates GPU memory fragmentation, continuous batching maximises throughput across concurrent requests. OpenAI-compatible API, multi-GPU, quantization support. Apache 2.0, adopted by Google, Microsoft, and most major AI labs.
+
 ### [CrewAI](./agent-frameworks/README.md#crewai) ⭐ 46.8k
 Multi-agent framework where agents have roles, goals, and backstories — maps to how humans think about teams. Define a crew, assign tasks, let agents collaborate and delegate. MIT licensed, intuitive enough to ship in an afternoon.
 
@@ -156,11 +169,23 @@ ByteDance's deployable super agent platform. Spin up with Docker and get a full-
 ### [Dify](./llm-app-builder/README.md#dify) ⭐ 134k
 Open-source LLM app platform with visual workflow builder, RAG, agents, and observability. Drag-and-drop pipelines deployable as APIs. One of the highest-starred AI infrastructure projects in existence.
 
+### [AnythingLLM](./llm-app-builder/README.md#anythingllm) ⭐ 56.7k
+Self-hosted AI workspace — upload docs, chat with them via RAG, run agents, manage multiple users. Supports 30+ LLM providers and 10+ vector databases. Ships as Docker container or native desktop app. MIT licensed, zero cloud dependency.
+
 ### [Firecrawl](./web-scraping/README.md#firecrawl) ⭐ 96.1k
 Turn any website into clean Markdown or structured JSON for LLM pipelines. Handles JS rendering, auth, rate limits, and anti-bot measures. Output designed for AI consumption — 96.1k stars with only 52 open issues.
 
 ### [LightRAG](./rag-frameworks/README.md#lightrag) ⭐ 29.8k
 RAG with a knowledge graph layer — extracts entities and relationships from documents then queries both graph and vector store together. Answers questions about *connections* between concepts, not just surface similarity. MIT, LLM-agnostic, multiple storage backends.
+
+### [Qdrant](./vector-databases/README.md#qdrant) ⭐ 29.8k
+High-performance vector database built in Rust. HNSW indexing, SIMD acceleration, REST + gRPC APIs, hybrid dense/sparse search. Apache 2.0, self-hostable single container or distributed cluster, client libraries in 6 languages.
+
+### [Milvus](./vector-databases/README.md#milvus) ⭐ 43.5k
+Cloud-native distributed vector database for AI at scale. Separated compute/storage, GPU acceleration, Kubernetes-native, billions of vectors. Linux Foundation project, Apache 2.0, last commit March 25 2026.
+
+### [Ragas](./llm-evaluation/README.md#ragas) ⭐ 13.1k
+Evaluate RAG pipelines with objective metrics — faithfulness, answer relevancy, context precision. Generates synthetic test datasets from your documents automatically. Apache 2.0, integrates with LangChain, LlamaIndex, and most major LLM frameworks.
 
 ### [Home Assistant](./home-automation/README.md#home-assistant) ⭐ 85.7k
 The definitive self-hosted smart home platform. Connect 3,000+ device integrations — Zigbee, Z-Wave, Matter, Philips Hue, Apple HomeKit and more — through a unified local interface. 4,672 contributors, monthly releases, Apache 2.0. Your home stays yours.
@@ -177,6 +202,9 @@ eBPF-powered test generation from real traffic — no SDK, no instrumentation, n
 ### [Strix](./security-testing/README.md#strix) ⭐ 21.3k
 Autonomous AI agents for penetration testing — they don't just find potential vulnerabilities, they validate each one through an actual proof-of-concept. Built on Nuclei, Caido, and Playwright with LiteLLM for LLM-agnostic intelligence. pip-installable, CI/CD-compatible, Apache 2.0.
 
+### [Garak](./security-testing/README.md#garak) ⭐ 7.4k
+NVIDIA's LLM vulnerability scanner — probes models for jailbreaks, prompt injection, data leakage, hallucination, and toxicity before they hit production. Plugin-based: swap probes, detectors, and generators independently. pip-installable, Apache 2.0, supports 15+ LLM providers.
+
 ### [LuxTTS](./voice-cloning/README.md#luxtts) ⭐ 3.2k
 Local voice cloning with 48kHz output at 150x realtime — on ~1GB VRAM. Clone any voice from a short reference clip, runs on CUDA, CPU, or Apple MPS. Apache 2.0 with no model licence restrictions, unlike most TTS tools that use CC-BY-NC on their weights.
 
@@ -186,6 +214,12 @@ Local voice cloning with 48kHz output at 150x realtime — on ~1GB VRAM. Clone a
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [vLLM](./local-llm/README.md) | Local LLM | 74.3k ⭐ | 2026-03 |
+| [Qdrant](./vector-databases/README.md) | Vector Databases | 29.8k ⭐ | 2026-03 |
+| [Milvus](./vector-databases/README.md) | Vector Databases | 43.5k ⭐ | 2026-03 |
+| [AnythingLLM](./llm-app-builder/README.md) | LLM App Builder | 56.7k ⭐ | 2026-03 |
+| [Ragas](./llm-evaluation/README.md) | LLM Evaluation | 13.1k ⭐ | 2026-03 |
+| [Garak](./security-testing/README.md) | Security Testing | 7.4k ⭐ | 2026-03 |
 | [LuxTTS](./voice-cloning/README.md) | Voice Cloning | 3.2k ⭐ | 2026-03 |
 | [Strix](./security-testing/README.md) | Security Testing | 21.3k ⭐ | 2026-03 |
 | [Keploy](./testing/README.md) | Testing | 16.6k ⭐ | 2026-03 |
