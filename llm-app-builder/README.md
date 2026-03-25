@@ -19,3 +19,17 @@ Visual workflow builder for LLM pipelines: drag nodes for prompts, tools, loops,
 **Why it's notable:** Dify sits at the intersection of no-code and pro-code LLM development. The visual workflow editor lowers the floor — non-engineers can build RAG pipelines — while the API and Python SDK keep the ceiling high for developers. 134k stars is one of the highest in the entire AI infrastructure space, and the rate of development is relentless. If you're building anything with LLMs at the application layer, this is what you evaluate first.
 
 ---
+
+### [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐ 56.7k
+
+**Self-hosted AI workspace — chat with your docs, run agents, multi-user, no cloud needed.**
+
+AnythingLLM is a fully self-hosted AI assistant platform: ingest documents (PDF, Word, TXT, URLs), chat with them via RAG, run autonomous agents, and manage multiple users with role-based access — all from a clean web UI. Supports 30+ LLM providers (OpenAI, Anthropic, Ollama, Azure, AWS Bedrock and more) and 10+ vector databases (Qdrant, Milvus, Chroma, LanceDB). Ships as a Docker container, desktop app (Mac, Windows, Linux), or cloud deployment.
+
+**Stack:** Node.js, React/Vite, LanceDB (default), Docker
+**License:** MIT
+**Deployment:** Self-hosted (Docker) · Desktop app · Cloud
+
+**Why it's notable:** Dify is for engineers building LLM workflows. AnythingLLM is for teams that just want a self-hosted ChatGPT with their own documents. The distinction matters: no workflow editor, no visual pipelines — just upload your files and start chatting, with full control over which LLM and vector store backs it. 56.7k stars with MIT licence and desktop apps for all three platforms means it's genuinely accessible to non-technical users who want data sovereignty without any cloud dependency.
+
+---

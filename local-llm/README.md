@@ -47,3 +47,17 @@ Simon Willison's tool for running prompts against any LLM from the terminal or P
 **Why it's notable:** LiteLLM is for routing in production systems. llm is for humans at the terminal who want to query any model with one command and keep a history of everything they've asked. The SQLite logging is quietly one of the most useful features — a permanent record of every interaction, searchable and exportable.
 
 ---
+
+### [vLLM](https://github.com/vllm-project/vllm) ⭐ 74.3k
+
+**Production-grade LLM inference engine — high throughput, low latency, multi-GPU.**
+
+vLLM is the engine for serving LLMs in production at scale. Its PagedAttention memory management eliminates KV cache fragmentation, and continuous batching keeps GPUs saturated across concurrent requests. Serves models across multiple GPUs with tensor and pipeline parallelism, supports quantization (GPTQ, AWQ), speculative decoding, and is fully OpenAI API-compatible. Drop-in replacement for the OpenAI endpoint — any client that works with OpenAI works with vLLM.
+
+**Stack:** Python, CUDA, C++, PyTorch
+**License:** Apache 2.0
+**Platforms:** NVIDIA GPU · AMD GPU · Intel · ARM · TPU
+
+**Why it's notable:** Ollama makes local LLMs easy for one user. vLLM makes them fast for hundreds. The PagedAttention breakthrough (from a UC Berkeley paper) is why vLLM became the industry standard for production LLM serving — it manages GPU memory the way virtual memory manages RAM, eliminating the throughput bottleneck that plagued earlier serving frameworks. At 74.3k stars it's one of the most starred projects in the entire AI infrastructure space, with adoption at Google, Microsoft, and most major AI labs.
+
+---
