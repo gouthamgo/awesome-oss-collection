@@ -9,22 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Open PR and merge to main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Merge dev into main
         run: |
-          gh pr create \
-            --base main \
-            --head dev \
-            --title "$(git log -1 --pretty=%s)" \
-            --body "$(git log -1 --pretty=%b)" \
-            || echo "PR already open."
-
-          gh pr merge dev --squash --delete-branch=false
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          git merge --squash dev
+          git commit -m "$(git log dev -1 --pretty=%s)" || echo "Nothing to commit."
+          git push origin main
