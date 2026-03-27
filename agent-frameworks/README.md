@@ -44,3 +44,16 @@ A complete, deployable agentic AI platform built on LangGraph. Spin it up with D
 **Why it's notable:** CrewAI and DSPy give you primitives to build agent systems — DeerFlow gives you the finished platform. ByteDance shipped this to #1 on GitHub Trending at v2.0 with 32.6k stars, and the February 2026 release shows it's in active production development, not maintenance mode. The sandboxed code execution environment is the piece that elevates it: agents can write and run arbitrary code safely without touching your host system. For teams that want to deploy an internal research agent rather than engineer one from scratch, this is the starting point.
 
 ---
+
+### [AutoGen](https://github.com/microsoft/autogen) ⭐ 56.2k
+
+**Microsoft's event-driven multi-agent framework — distributed, cross-language, with a no-code Studio.**
+
+AutoGen builds multi-agent systems around an event-driven, message-passing architecture rather than a role/crew metaphor. Agents communicate through typed messages, can run as distributed processes across machines, and support both Python and .NET. Ships in three layers: Core (low-level message passing), AgentChat (higher-level patterns for rapid prototyping), and AutoGen Studio (a no-code web GUI for building and testing agent pipelines without writing code). Integrates with MCP for tool access and external APIs.
+
+**Stack:** Python 3.10+, .NET, TypeScript (Studio), event-driven runtime
+**License:** MIT
+
+**Why it's notable:** CrewAI maps to how humans think about teams. AutoGen maps to how distributed systems engineers think about services — message passing, event streams, independent processes. The architectural difference matters at scale: AutoGen agents can run on separate machines, handle async workflows, and be mixed across Python and .NET codebases. The no-code Studio lowers the floor for non-engineers. Microsoft-backed at 56.2k stars with 471 open issues — a well-maintained, enterprise-tested project that predates most of the current agent framework wave.
+
+---

@@ -33,3 +33,16 @@ AnythingLLM is a fully self-hosted AI assistant platform: ingest documents (PDF,
 **Why it's notable:** Dify is for engineers building LLM workflows. AnythingLLM is for teams that just want a self-hosted ChatGPT with their own documents. The distinction matters: no workflow editor, no visual pipelines — just upload your files and start chatting, with full control over which LLM and vector store backs it. 56.7k stars with MIT licence and desktop apps for all three platforms means it's genuinely accessible to non-technical users who want data sovereignty without any cloud dependency.
 
 ---
+
+### [Gradio](https://github.com/gradio-app/gradio) ⭐ 42.2k
+
+**Build interactive ML and AI web UIs in pure Python — no frontend skills required.**
+
+Gradio lets you wrap any Python function, ML model, or LLM in a shareable web interface with a few lines of code. Three building blocks cover most use cases: `gr.Interface` for quick single-function demos, `gr.Blocks` for custom multi-component layouts, and `gr.ChatInterface` for conversational AI. Built-in component library handles text, images, audio, video, files, dataframes, and plots. Share publicly via a built-in tunnel link or deploy to HuggingFace Spaces, Docker, or any server.
+
+**Stack:** Python, FastAPI, Svelte/Vite, Tailwind CSS
+**License:** Apache 2.0
+
+**Why it's notable:** Gradio solves the fastest possible path from "working model" to "shareable demo." No JavaScript, no React, no deployment pipeline — just Python. It's why HuggingFace Spaces is filled with interactive AI demos: Gradio is the default interface layer for the entire ML research community. 42.2k stars, JavaScript and Python client libraries, and native HuggingFace integration make it the tool teams reach for when they need to go from notebook to web UI in an afternoon without compromising on interactivity.
+
+---

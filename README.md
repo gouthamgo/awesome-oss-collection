@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **22 categories · 32 projects** — growing over time
+> **22 categories · 35 projects** — growing over time
 
 ```
 Collection Hub
@@ -39,14 +39,17 @@ Collection Hub
 ├── 🕸️ Agent Frameworks
 │   ├── CrewAI (46.8k ⭐) — multi-agent with roles, goals, backstories
 │   ├── DSPy (33k ⭐) — program LLMs instead of prompting them
-│   └── DeerFlow (32.6k ⭐) — deployable super agent platform with sandbox + memory
+│   ├── DeerFlow (32.6k ⭐) — deployable super agent platform with sandbox + memory
+│   └── AutoGen (56.2k ⭐) — Microsoft's event-driven distributed multi-agent framework
 ├── 🏗️ LLM App Builder
 │   ├── Dify (134k ⭐) — visual workflow builder for LLM applications
-│   └── AnythingLLM (56.7k ⭐) — self-hosted AI workspace, chat with your docs
+│   ├── AnythingLLM (56.7k ⭐) — self-hosted AI workspace, chat with your docs
+│   └── Gradio (42.2k ⭐) — build interactive ML/AI web UIs in pure Python
 ├── 🕷️ Web Scraping
 │   └── Firecrawl (96.1k ⭐) — turn any website into LLM-ready data
 ├── 📚 RAG Frameworks
-│   └── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
+│   ├── LightRAG (29.8k ⭐) — RAG with knowledge graph for relational retrieval
+│   └── RAGFlow (76.2k ⭐) — self-hosted RAG platform with deep document understanding
 ├── 🗄️ Vector Databases
 │   ├── Qdrant (29.8k ⭐) — Rust-based vector DB, fast and self-hostable
 │   └── Milvus (43.5k ⭐) — distributed vector DB for billions of vectors
@@ -83,10 +86,10 @@ Collection Hub
 | [🌐 web-browsers](./web-browsers/README.md) | 1 | Independent browser engines built from scratch |
 | [📱 on-device-ai](./on-device-ai/README.md) | 1 | Run AI locally on mobile and edge — no cloud required |
 | [🧠 local-llm](./local-llm/README.md) | 4 | Run open-source LLMs locally — personal use to production serving |
-| [🕸️ agent-frameworks](./agent-frameworks/README.md) | 3 | Frameworks for building and orchestrating AI agents |
-| [🏗️ llm-app-builder](./llm-app-builder/README.md) | 2 | Platforms for building and deploying LLM-powered applications |
+| [🕸️ agent-frameworks](./agent-frameworks/README.md) | 4 | Frameworks for building and orchestrating AI agents |
+| [🏗️ llm-app-builder](./llm-app-builder/README.md) | 3 | Platforms for building and deploying LLM-powered applications |
 | [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
-| [📚 rag-frameworks](./rag-frameworks/README.md) | 1 | Retrieval-Augmented Generation with knowledge graph support |
+| [📚 rag-frameworks](./rag-frameworks/README.md) | 2 | Retrieval-Augmented Generation — knowledge graph and full platform |
 | [🗄️ vector-databases](./vector-databases/README.md) | 2 | Self-hosted vector databases for semantic search and AI memory |
 | [📊 llm-evaluation](./llm-evaluation/README.md) | 1 | Evaluate RAG pipelines and LLM outputs with objective metrics |
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
@@ -166,17 +169,26 @@ Stanford NLP's framework for programming LLMs rather than prompting them. Define
 ### [DeerFlow](./agent-frameworks/README.md#deerflow) ⭐ 32.6k
 ByteDance's deployable super agent platform. Spin up with Docker and get a full-stack web UI where agents research, write reports, generate slides, and execute code in isolated sandboxes — with long-term memory and Slack/Telegram/Feishu integration. Built on LangGraph, MIT licensed, hit #1 GitHub Trending at v2.0.
 
+### [AutoGen](./agent-frameworks/README.md#autogen) ⭐ 56.2k
+Microsoft's event-driven multi-agent framework. Agents communicate through typed messages, run as distributed processes across machines, and support both Python and .NET. Ships with AutoGen Studio — a no-code web GUI for building agent pipelines without writing code. MIT, 56.2k stars, enterprise-tested.
+
 ### [Dify](./llm-app-builder/README.md#dify) ⭐ 134k
 Open-source LLM app platform with visual workflow builder, RAG, agents, and observability. Drag-and-drop pipelines deployable as APIs. One of the highest-starred AI infrastructure projects in existence.
 
 ### [AnythingLLM](./llm-app-builder/README.md#anythingllm) ⭐ 56.7k
 Self-hosted AI workspace — upload docs, chat with them via RAG, run agents, manage multiple users. Supports 30+ LLM providers and 10+ vector databases. Ships as Docker container or native desktop app. MIT licensed, zero cloud dependency.
 
+### [Gradio](./llm-app-builder/README.md#gradio) ⭐ 42.2k
+Build interactive ML/AI web UIs in pure Python — no frontend skills needed. `gr.Interface` for quick demos, `gr.Blocks` for custom layouts, `gr.ChatInterface` for conversational AI. HuggingFace-backed, Apache 2.0, the default interface layer for the entire ML research community.
+
 ### [Firecrawl](./web-scraping/README.md#firecrawl) ⭐ 96.1k
 Turn any website into clean Markdown or structured JSON for LLM pipelines. Handles JS rendering, auth, rate limits, and anti-bot measures. Output designed for AI consumption — 96.1k stars with only 52 open issues.
 
 ### [LightRAG](./rag-frameworks/README.md#lightrag) ⭐ 29.8k
 RAG with a knowledge graph layer — extracts entities and relationships from documents then queries both graph and vector store together. Answers questions about *connections* between concepts, not just surface similarity. MIT, LLM-agnostic, multiple storage backends.
+
+### [RAGFlow](./rag-frameworks/README.md#ragflow) ⭐ 76.2k
+End-to-end self-hosted RAG platform with layout-aware document parsing, grounded citations, hybrid search, and built-in agents. Deploy via Docker Compose, upload your documents, and query through a chat UI or API. Apache 2.0, 76.2k stars — one of the most starred RAG projects in existence.
 
 ### [Qdrant](./vector-databases/README.md#qdrant) ⭐ 29.8k
 High-performance vector database built in Rust. HNSW indexing, SIMD acceleration, REST + gRPC APIs, hybrid dense/sparse search. Apache 2.0, self-hostable single container or distributed cluster, client libraries in 6 languages.
@@ -214,6 +226,9 @@ Local voice cloning with 48kHz output at 150x realtime — on ~1GB VRAM. Clone a
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [RAGFlow](./rag-frameworks/README.md) | RAG Frameworks | 76.2k ⭐ | 2026-03 |
+| [AutoGen](./agent-frameworks/README.md) | Agent Frameworks | 56.2k ⭐ | 2026-03 |
+| [Gradio](./llm-app-builder/README.md) | LLM App Builder | 42.2k ⭐ | 2026-03 |
 | [vLLM](./local-llm/README.md) | Local LLM | 74.3k ⭐ | 2026-03 |
 | [Qdrant](./vector-databases/README.md) | Vector Databases | 29.8k ⭐ | 2026-03 |
 | [Milvus](./vector-databases/README.md) | Vector Databases | 43.5k ⭐ | 2026-03 |
