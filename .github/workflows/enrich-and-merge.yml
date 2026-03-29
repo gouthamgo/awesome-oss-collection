@@ -20,6 +20,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout main
-          git merge --squash dev
-          git commit -m "$(git log dev -1 --pretty=%s)" || echo "Nothing to commit."
+          git merge -X theirs origin/dev --no-edit -m "$(git log origin/dev -1 --pretty=%s)"
           git push origin main
