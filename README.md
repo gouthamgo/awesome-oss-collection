@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **22 categories · 35 projects** — growing over time
+> **23 categories · 36 projects** — growing over time
 
 ```
 Collection Hub
@@ -65,8 +65,10 @@ Collection Hub
 ├── 🔐 Security Testing
 │   ├── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
 │   └── Garak (7.4k ⭐) — LLM vulnerability scanner for jailbreaks and prompt injection
-└── 🎤 Voice Cloning
-    └── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
+├── 🎤 Voice Cloning
+│   └── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
+└── 🏢 AI Operations
+    └── Paperclip (35.9k ⭐) — run AI agent teams like a company, with org charts and budgets
 ```
 
 ---
@@ -97,6 +99,7 @@ Collection Hub
 | [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
 | [🔐 security-testing](./security-testing/README.md) | 2 | Pen testing for apps and LLM vulnerability scanning |
 | [🎤 voice-cloning](./voice-cloning/README.md) | 1 | Local voice cloning — high-fidelity 48kHz output, no cloud required |
+| [🏢 ai-operations](./ai-operations/README.md) | 1 | Orchestrate and govern AI agent teams at the organisational level |
 
 ---
 
@@ -220,12 +223,16 @@ NVIDIA's LLM vulnerability scanner — probes models for jailbreaks, prompt inje
 ### [LuxTTS](./voice-cloning/README.md#luxtts) ⭐ 3.2k
 Local voice cloning with 48kHz output at 150x realtime — on ~1GB VRAM. Clone any voice from a short reference clip, runs on CUDA, CPU, or Apple MPS. Apache 2.0 with no model licence restrictions, unlike most TTS tools that use CC-BY-NC on their weights.
 
+### [Paperclip](./ai-operations/README.md#paperclip) ⭐ 35.9k
+Run autonomous AI agent teams like a company — org charts, per-agent budgets, persistent state, scheduled heartbeats, and multi-tenant isolation. Bring any agent backend (Claude Code, Codex, Cursor, Bash, HTTP). MIT, PostgreSQL-backed, single command to self-host.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Paperclip](./ai-operations/README.md) | AI Operations | 35.9k ⭐ | 2026-03 |
 | [RAGFlow](./rag-frameworks/README.md) | RAG Frameworks | 76.2k ⭐ | 2026-03 |
 | [AutoGen](./agent-frameworks/README.md) | Agent Frameworks | 56.2k ⭐ | 2026-03 |
 | [Gradio](./llm-app-builder/README.md) | LLM App Builder | 42.2k ⭐ | 2026-03 |
