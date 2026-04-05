@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **23 categories · 36 projects** — growing over time
+> **28 categories · 42 projects** — growing over time
 
 ```
 Collection Hub
@@ -59,7 +59,8 @@ Collection Hub
 │   └── Home Assistant (85.7k ⭐) — self-hosted smart home, local control, privacy-first
 ├── 🛠️ AI Dev Tools
 │   ├── Spec Kit (81.1k ⭐) — spec-driven development CLI for AI coding agents
-│   └── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
+│   ├── Agent Orchestrator (5.3k ⭐) — fleet of parallel coding agents across git branches
+│   └── Aider (42.8k ⭐) — AI pair programming in your terminal, edits code and commits to git
 ├── 🧪 Testing
 │   └── Keploy (16.6k ⭐) — auto-generate tests from real traffic via eBPF, zero code changes
 ├── 🔐 Security Testing
@@ -67,8 +68,18 @@ Collection Hub
 │   └── Garak (7.4k ⭐) — LLM vulnerability scanner for jailbreaks and prompt injection
 ├── 🎤 Voice Cloning
 │   └── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
-└── 🏢 AI Operations
-    └── Paperclip (35.9k ⭐) — run AI agent teams like a company, with org charts and budgets
+├── 🏢 AI Operations
+│   └── Paperclip (35.9k ⭐) — run AI agent teams like a company, with org charts and budgets
+├── 🎨 AI Generation
+│   └── ComfyUI (108k ⭐) — node-based visual engine for AI image, video, audio, and 3D generation
+├── 📡 Monitoring
+│   └── Uptime Kuma (84.9k ⭐) — self-hosted uptime monitoring with 90+ notification integrations
+├── 🚀 Self-Hosted Infra
+│   └── Coolify (52.6k ⭐) — self-host everything, your open-source Heroku/Netlify/Vercel
+├── 🔑 Password Manager
+│   └── Vaultwarden (57.9k ⭐) — self-hosted Bitwarden server in Rust, uses 10MB of RAM
+└── 📝 Productivity
+    └── AppFlowy (69.1k ⭐) — self-hosted Notion alternative, local-first, Flutter + Rust
 ```
 
 ---
@@ -95,11 +106,16 @@ Collection Hub
 | [🗄️ vector-databases](./vector-databases/README.md) | 2 | Self-hosted vector databases for semantic search and AI memory |
 | [📊 llm-evaluation](./llm-evaluation/README.md) | 1 | Evaluate RAG pipelines and LLM outputs with objective metrics |
 | [🏠 home-automation](./home-automation/README.md) | 1 | Self-hosted smart home control — local, private, no cloud required |
-| [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 2 | AI-augmented development workflows — spec, plan, implement |
+| [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 3 | AI-augmented development workflows — spec, plan, implement |
 | [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
 | [🔐 security-testing](./security-testing/README.md) | 2 | Pen testing for apps and LLM vulnerability scanning |
 | [🎤 voice-cloning](./voice-cloning/README.md) | 1 | Local voice cloning — high-fidelity 48kHz output, no cloud required |
 | [🏢 ai-operations](./ai-operations/README.md) | 1 | Orchestrate and govern AI agent teams at the organisational level |
+| [🎨 ai-generation](./ai-generation/README.md) | 1 | Node-based visual pipelines for AI image, video, audio, and 3D generation |
+| [📡 monitoring](./monitoring/README.md) | 1 | Self-hosted uptime and performance monitoring with alerting |
+| [🚀 self-hosted-infra](./self-hosted-infra/README.md) | 1 | Self-host your own PaaS — deploy apps, databases, and services on your server |
+| [🔑 password-manager](./password-manager/README.md) | 1 | Self-hosted password vaults — your credentials on your own server |
+| [📝 productivity](./productivity/README.md) | 1 | Self-hosted workspaces and collaboration tools — notes, docs, and databases |
 
 ---
 
@@ -226,12 +242,36 @@ Local voice cloning with 48kHz output at 150x realtime — on ~1GB VRAM. Clone a
 ### [Paperclip](./ai-operations/README.md#paperclip) ⭐ 35.9k
 Run autonomous AI agent teams like a company — org charts, per-agent budgets, persistent state, scheduled heartbeats, and multi-tenant isolation. Bring any agent backend (Claude Code, Codex, Cursor, Bash, HTTP). MIT, PostgreSQL-backed, single command to self-host.
 
+### [Aider](./ai-dev-tools/README.md#aider) ⭐ 42.8k
+AI pair programming in your terminal — edits your code, commits to git, works with 100+ LLMs. The terminal-native coding assistant that predated every IDE chat panel. Architect + editor mode routes reasoning to a strong model and edits to a fast one. Top of SWE-bench leaderboards. Apache 2.0.
+
+### [ComfyUI](./ai-generation/README.md#comfyui) ⭐ 108k
+The most powerful node-based visual engine for AI generation. Wire together model loaders, samplers, ControlNet, LoRA, and upscalers into custom pipelines without code. Supports Stable Diffusion, Flux, SDXL, HunyuanVideo, Stable Audio, and more. Runs entirely offline on NVIDIA, AMD, Intel, or Apple Silicon. GPL-3.0.
+
+### [Uptime Kuma](./monitoring/README.md#uptime-kuma) ⭐ 84.9k
+Self-hosted uptime monitoring with a beautiful UI and 90+ notification integrations — Telegram, Discord, Slack, PagerDuty, email, webhooks. Monitors URLs, APIs, Docker containers, DNS, and TCP ports at 20-second intervals. Single Docker container, zero config, publishes public status pages. MIT.
+
+### [Coolify](./self-hosted-infra/README.md#coolify) ⭐ 52.6k
+Turn any VPS or bare metal server into your own cloud platform. Deploy apps, databases, and 280+ one-click services (WordPress, Supabase, Ghost, Plausible, and more) via a clean web UI. Handles SSL, reverse proxy, Git deployments, and automated backups. The answer to Heroku's death and Vercel's price cliffs. Apache 2.0.
+
+### [Vaultwarden](./password-manager/README.md#vaultwarden) ⭐ 57.9k
+Unofficial Bitwarden server reimplemented in Rust — fully compatible with all official Bitwarden clients, runs in ~10MB of RAM vs the official server's ~2GB. Supports organisations, FIDO2/WebAuthn 2FA, secure file attachments, and an admin panel. Deploy as a single Docker container. AGPL-3.0 with the lowest issue-to-star ratio in this entire collection.
+
+### [AppFlowy](./productivity/README.md#appflowy) ⭐ 69.1k
+Self-hosted Notion alternative built with Flutter and Rust. Rich document editing, grid databases, kanban boards, calendar views, and team wikis — all in one cross-platform app with native desktop (macOS, Windows, Linux) and mobile apps. Local-first data ownership, built-in AI assistant powered by your LLM of choice. AGPL-3.0.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [AppFlowy](./productivity/README.md) | Productivity | 69.1k ⭐ | 2026-04 |
+| [Vaultwarden](./password-manager/README.md) | Password Manager | 57.9k ⭐ | 2026-04 |
+| [Coolify](./self-hosted-infra/README.md) | Self-Hosted Infra | 52.6k ⭐ | 2026-04 |
+| [Uptime Kuma](./monitoring/README.md) | Monitoring | 84.9k ⭐ | 2026-04 |
+| [ComfyUI](./ai-generation/README.md) | AI Generation | 108k ⭐ | 2026-04 |
+| [Aider](./ai-dev-tools/README.md) | AI Dev Tools | 42.8k ⭐ | 2026-04 |
 | [Paperclip](./ai-operations/README.md) | AI Operations | 35.9k ⭐ | 2026-03 |
 | [RAGFlow](./rag-frameworks/README.md) | RAG Frameworks | 76.2k ⭐ | 2026-03 |
 | [AutoGen](./agent-frameworks/README.md) | Agent Frameworks | 56.2k ⭐ | 2026-03 |
