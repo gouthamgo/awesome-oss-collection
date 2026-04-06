@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **28 categories · 42 projects** — growing over time
+> **29 categories · 43 projects** — growing over time
 
 ```
 Collection Hub
@@ -78,8 +78,10 @@ Collection Hub
 │   └── Coolify (52.6k ⭐) — self-host everything, your open-source Heroku/Netlify/Vercel
 ├── 🔑 Password Manager
 │   └── Vaultwarden (57.9k ⭐) — self-hosted Bitwarden server in Rust, uses 10MB of RAM
-└── 📝 Productivity
-    └── AppFlowy (69.1k ⭐) — self-hosted Notion alternative, local-first, Flutter + Rust
+├── 📝 Productivity
+│   └── AppFlowy (69.1k ⭐) — self-hosted Notion alternative, local-first, Flutter + Rust
+└── 🎬 Automated Video
+    └── RedditVideoMakerBot (8.7k ⭐) — turn any Reddit thread into a TikTok/Shorts video with one command
 ```
 
 ---
@@ -116,6 +118,7 @@ Collection Hub
 | [🚀 self-hosted-infra](./self-hosted-infra/README.md) | 1 | Self-host your own PaaS — deploy apps, databases, and services on your server |
 | [🔑 password-manager](./password-manager/README.md) | 1 | Self-hosted password vaults — your credentials on your own server |
 | [📝 productivity](./productivity/README.md) | 1 | Self-hosted workspaces and collaboration tools — notes, docs, and databases |
+| [🎬 automated-video](./automated-video/README.md) | 1 | Automate short-form video creation from Reddit and online content — no editing needed |
 
 ---
 
@@ -260,12 +263,16 @@ Unofficial Bitwarden server reimplemented in Rust — fully compatible with all 
 ### [AppFlowy](./productivity/README.md#appflowy) ⭐ 69.1k
 Self-hosted Notion alternative built with Flutter and Rust. Rich document editing, grid databases, kanban boards, calendar views, and team wikis — all in one cross-platform app with native desktop (macOS, Windows, Linux) and mobile apps. Local-first data ownership, built-in AI assistant powered by your LLM of choice. AGPL-3.0.
 
+### [RedditVideoMakerBot](./automated-video/README.md#redditvideomakerbot) ⭐ 8.7k
+The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit or thread URL and it handles everything: TTS narration, background footage overlay, screenshot rendering, duplicate prevention — and exports a finished video ready to upload. Zero manual editing. GPL-3.0, 2.1k forks, actively maintained.
+
 ---
 
 ## Recent Additions
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [RedditVideoMakerBot](./automated-video/README.md) | Automated Video | 8.7k ⭐ | 2026-04 |
 | [AppFlowy](./productivity/README.md) | Productivity | 69.1k ⭐ | 2026-04 |
 | [Vaultwarden](./password-manager/README.md) | Password Manager | 57.9k ⭐ | 2026-04 |
 | [Coolify](./self-hosted-infra/README.md) | Self-Hosted Infra | 52.6k ⭐ | 2026-04 |
