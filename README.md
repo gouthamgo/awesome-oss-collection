@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **29 categories · 43 projects** — growing over time
+> **30 categories · 44 projects** — growing over time
 
 ```
 Collection Hub
@@ -80,8 +80,10 @@ Collection Hub
 │   └── Vaultwarden (57.9k ⭐) — self-hosted Bitwarden server in Rust, uses 10MB of RAM
 ├── 📝 Productivity
 │   └── AppFlowy (69.1k ⭐) — self-hosted Notion alternative, local-first, Flutter + Rust
-└── 🎬 Automated Video
-    └── RedditVideoMakerBot (8.7k ⭐) — turn any Reddit thread into a TikTok/Shorts video with one command
+├── 🎬 Automated Video
+│   └── RedditVideoMakerBot (8.7k ⭐) — turn any Reddit thread into a TikTok/Shorts video with one command
+└── 🧰 Agent Tools
+    └── Agent-Reach (15.4k ⭐) — give AI agents internet access across 14+ platforms, zero API cost
 ```
 
 ---
@@ -119,6 +121,7 @@ Collection Hub
 | [🔑 password-manager](./password-manager/README.md) | 1 | Self-hosted password vaults — your credentials on your own server |
 | [📝 productivity](./productivity/README.md) | 1 | Self-hosted workspaces and collaboration tools — notes, docs, and databases |
 | [🎬 automated-video](./automated-video/README.md) | 1 | Automate short-form video creation from Reddit and online content — no editing needed |
+| [🧰 agent-tools](./agent-tools/README.md) | 1 | Extend AI coding agents with internet access, platform integrations, and utilities |
 
 ---
 
@@ -263,6 +266,9 @@ Unofficial Bitwarden server reimplemented in Rust — fully compatible with all 
 ### [AppFlowy](./productivity/README.md#appflowy) ⭐ 69.1k
 Self-hosted Notion alternative built with Flutter and Rust. Rich document editing, grid databases, kanban boards, calendar views, and team wikis — all in one cross-platform app with native desktop (macOS, Windows, Linux) and mobile apps. Local-first data ownership, built-in AI assistant powered by your LLM of choice. AGPL-3.0.
 
+### [Agent-Reach](./agent-tools/README.md#agent-reach) ⭐ 15.4k
+Give your AI coding agent internet access across Twitter, Reddit, YouTube, GitHub, Bilibili, and 9+ more platforms with zero API costs. One install command bundles yt-dlp, twitter-cli, Jina Reader, and RSS parsers into a unified CLI agents can call. Works with Claude Code, Cursor, Windsurf, and OpenClaw. MIT, 1.3k forks.
+
 ### [RedditVideoMakerBot](./automated-video/README.md#redditvideomakerbot) ⭐ 8.7k
 The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit or thread URL and it handles everything: TTS narration, background footage overlay, screenshot rendering, duplicate prevention — and exports a finished video ready to upload. Zero manual editing. GPL-3.0, 2.1k forks, actively maintained.
 
@@ -272,6 +278,7 @@ The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit 
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Agent-Reach](./agent-tools/README.md) | Agent Tools | 15.4k ⭐ | 2026-04 |
 | [RedditVideoMakerBot](./automated-video/README.md) | Automated Video | 8.7k ⭐ | 2026-04 |
 | [AppFlowy](./productivity/README.md) | Productivity | 69.1k ⭐ | 2026-04 |
 | [Vaultwarden](./password-manager/README.md) | Password Manager | 57.9k ⭐ | 2026-04 |
