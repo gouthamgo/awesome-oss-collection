@@ -12,6 +12,7 @@ A dedicated section for projects built around Claude and Claude Code — skills,
 | oh-my-claudecode | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 14.9k ⭐ | Teams-first multi-agent orchestration — 32 specialized agents, smart model routing (Haiku → Opus), 30-50% token savings. MIT. **Most watched entry here.** |
 | GEO-SEO Claude | [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | 4.1k ⭐ | AI search optimization auditor — scores website citability for ChatGPT, Perplexity, Google AIO, checks AI crawler permissions, PDF reports. MIT. |
 | Claude Scholar | [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 2.7k ⭐ | 40+ research skills for Claude Code — Zotero, Obsidian, experiment analysis, paper writing. Full academic workflow. MIT. |
+| Graphify | [safishamsi/graphify](https://github.com/safishamsi/graphify) | 4.2k ⭐ | Turn any codebase or doc folder into a queryable knowledge graph — 71.5x token reduction. AST + semantic extraction, interactive HTML output, Leiden clustering. Works with Claude Code, Codex, OpenClaw, Factory Droid. MIT. **Also in main collection → [agent-tools](./agent-tools/README.md).** |
 
 ---
 
