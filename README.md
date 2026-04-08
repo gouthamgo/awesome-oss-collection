@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **30 categories · 45 projects** — growing over time
+> **30 categories · 46 projects** — growing over time
 
 ```
 Collection Hub
@@ -20,7 +20,8 @@ Collection Hub
 │   └── OpenDataLoader PDF (7.3k ⭐) — structure-aware PDF extraction
 ├── 📈 Financial Analysis
 │   ├── AI Hedge Fund (49.4k ⭐) — multi-agent stock analysis
-│   └── Daily Stock Analysis (24k ⭐) — automated daily analysis with notifications
+│   ├── Daily Stock Analysis (24k ⭐) — automated daily analysis with notifications
+│   └── AI-Trader (12.5k ⭐) — agent swarm trading with signals marketplace and live execution
 ├── 🤖 AI Companions
 │   └── AIRI (35k ⭐) — self-hosted AI companion with voice and game-playing
 ├── 🔍 Private Search
@@ -97,7 +98,7 @@ Collection Hub
 | [📄 file-to-markdown](./file-to-markdown/README.md) | 1 | Convert docs, PDFs, and more to clean Markdown |
 | [🎥 screen-recording](./screen-recording/README.md) | 1 | Screen recorders with editing and presentation tools |
 | [📑 pdf-parsing](./pdf-parsing/README.md) | 1 | Structure-aware extraction from complex PDFs |
-| [📈 financial-analysis](./financial-analysis/README.md) | 2 | AI-powered stock analysis and investment research |
+| [📈 financial-analysis](./financial-analysis/README.md) | 3 | AI-powered stock analysis, research, and automated execution |
 | [🤖 ai-companions](./ai-companions/README.md) | 1 | Self-hosted AI virtual companions with voice and personality |
 | [🔍 private-search](./private-search/README.md) | 1 | Self-hosted search engines with no tracking or profiling |
 | [🔀 llm-gateway](./llm-gateway/README.md) | 1 | Unified proxy and SDK for routing across 100+ LLM providers |
@@ -155,6 +156,9 @@ Structure-aware PDF extraction to Markdown, JSON, and HTML. XY-Cut++ reading ord
 
 ### [AI Hedge Fund](./financial-analysis/README.md#ai-hedge-fund) ⭐ 49.4k
 12 AI agents each embodying a legendary investor philosophy — Buffett, Cathie Wood, and more — independently analyse a stock then debate a final recommendation. Multi-agent architecture for investment research, with backtesting and a web UI. Educational use only.
+
+### [AI-Trader](./financial-analysis/README.md#ai-trader) ⭐ 12.5k
+100% automated trading platform from HKUDS. Agent swarm intelligence — multiple strategies run in parallel, collective signal strength drives live execution. Signals marketplace with copy trading, supports stocks, crypto, and prediction markets. Paper trading mode for safe strategy testing. MIT, 2.1k forks.
 
 ### [Daily Stock Analysis](./financial-analysis/README.md#daily-stock-analysis) ⭐ 24k
 Automated daily stock analysis pipeline via GitHub Actions — pulls live data, generates AI buy/sell signals and entry/exit points, pushes results to WeChat, Feishu, Telegram, Slack, or email. A-shares, HK, and US markets. Zero infrastructure cost.
@@ -282,6 +286,7 @@ The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit 
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [AI-Trader](./financial-analysis/README.md) | Financial Analysis | 12.5k ⭐ | 2026-04 |
 | [Graphify](./agent-tools/README.md) | Agent Tools | 4.2k ⭐ | 2026-04 |
 | [Agent-Reach](./agent-tools/README.md) | Agent Tools | 15.4k ⭐ | 2026-04 |
 | [RedditVideoMakerBot](./automated-video/README.md) | Automated Video | 8.7k ⭐ | 2026-04 |
