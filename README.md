@@ -6,12 +6,13 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **30 categories · 46 projects** — growing over time
+> **30 categories · 47 projects** — growing over time
 
 ```
 Collection Hub
 ├── 🎙️ Speech to Text
-│   └── Handy (18.1k ⭐) — offline dictation for any text field
+│   ├── Handy (18.1k ⭐) — offline dictation for any text field
+│   └── RealtimeSTT (9.6k ⭐) — Python library for real-time STT with VAD and wake word support
 ├── 📄 File to Markdown
 │   └── MarkItDown (91.2k ⭐) — convert any file format to Markdown
 ├── 🎥 Screen Recording
@@ -94,7 +95,7 @@ Collection Hub
 
 | Folder | Projects | Summary |
 |---|---|---|
-| [🎙️ speech-to-text](./speech-to-text/README.md) | 1 | Offline & privacy-first transcription tools |
+| [🎙️ speech-to-text](./speech-to-text/README.md) | 2 | Offline & privacy-first transcription — desktop apps and developer libraries |
 | [📄 file-to-markdown](./file-to-markdown/README.md) | 1 | Convert docs, PDFs, and more to clean Markdown |
 | [🎥 screen-recording](./screen-recording/README.md) | 1 | Screen recorders with editing and presentation tools |
 | [📑 pdf-parsing](./pdf-parsing/README.md) | 1 | Structure-aware extraction from complex PDFs |
@@ -141,6 +142,9 @@ Each entry documents:
 ---
 
 ## Highlights
+
+### [RealtimeSTT](./speech-to-text/README.md#realtimestt) ⭐ 9.6k
+Python library for building real-time voice features — three lines to start streaming mic transcription. SileroVAD + WebRTCVAD detect speech boundaries, Faster-Whisper transcribes, Porcupine/OpenWakeWord enables always-on wake word detection. CPU and CUDA. The developer foundation for voice assistants and transcription apps. MIT.
 
 ### [Handy](./speech-to-text/README.md#handy) ⭐ 18.1k
 Offline speech-to-text for any text field on your computer. Hold a keyboard shortcut, speak, release — your words appear wherever your cursor is. Built on Whisper + Rust + Tauri. No cloud, no subscription.
@@ -286,6 +290,7 @@ The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit 
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [RealtimeSTT](./speech-to-text/README.md) | Speech to Text | 9.6k ⭐ | 2026-04 |
 | [AI-Trader](./financial-analysis/README.md) | Financial Analysis | 12.5k ⭐ | 2026-04 |
 | [Graphify](./agent-tools/README.md) | Agent Tools | 4.2k ⭐ | 2026-04 |
 | [Agent-Reach](./agent-tools/README.md) | Agent Tools | 15.4k ⭐ | 2026-04 |
