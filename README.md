@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **30 categories · 47 projects** — growing over time
+> **30 categories · 48 projects** — growing over time
 
 ```
 Collection Hub
@@ -81,7 +81,8 @@ Collection Hub
 ├── 🔑 Password Manager
 │   └── Vaultwarden (57.9k ⭐) — self-hosted Bitwarden server in Rust, uses 10MB of RAM
 ├── 📝 Productivity
-│   └── AppFlowy (69.1k ⭐) — self-hosted Notion alternative, local-first, Flutter + Rust
+│   ├── AppFlowy (69.1k ⭐) — self-hosted Notion alternative, local-first, Flutter + Rust
+│   └── Rowboat (10k ⭐) — local-first AI coworker, emails + meetings → knowledge graph → action
 ├── 🎬 Automated Video
 │   └── RedditVideoMakerBot (8.7k ⭐) — turn any Reddit thread into a TikTok/Shorts video with one command
 └── 🧰 Agent Tools
@@ -122,7 +123,7 @@ Collection Hub
 | [📡 monitoring](./monitoring/README.md) | 1 | Self-hosted uptime and performance monitoring with alerting |
 | [🚀 self-hosted-infra](./self-hosted-infra/README.md) | 1 | Self-host your own PaaS — deploy apps, databases, and services on your server |
 | [🔑 password-manager](./password-manager/README.md) | 1 | Self-hosted password vaults — your credentials on your own server |
-| [📝 productivity](./productivity/README.md) | 1 | Self-hosted workspaces and collaboration tools — notes, docs, and databases |
+| [📝 productivity](./productivity/README.md) | 2 | Self-hosted workspaces and AI coworkers — notes, docs, and persistent knowledge |
 | [🎬 automated-video](./automated-video/README.md) | 1 | Automate short-form video creation from Reddit and online content — no editing needed |
 | [🧰 agent-tools](./agent-tools/README.md) | 2 | Extend AI coding agents with internet access, platform integrations, and utilities |
 
@@ -272,6 +273,9 @@ Turn any VPS or bare metal server into your own cloud platform. Deploy apps, dat
 ### [Vaultwarden](./password-manager/README.md#vaultwarden) ⭐ 57.9k
 Unofficial Bitwarden server reimplemented in Rust — fully compatible with all official Bitwarden clients, runs in ~10MB of RAM vs the official server's ~2GB. Supports organisations, FIDO2/WebAuthn 2FA, secure file attachments, and an admin panel. Deploy as a single Docker container. AGPL-3.0 with the lowest issue-to-star ratio in this entire collection.
 
+### [Rowboat](./productivity/README.md#rowboat) ⭐ 10k
+Local-first AI coworker that ingests your emails and meetings into an editable Markdown knowledge graph, then generates briefs, PDFs, and draft emails grounded in your actual history. Persistent context, transparent working memory, MCP support, any LLM. Apache 2.0.
+
 ### [AppFlowy](./productivity/README.md#appflowy) ⭐ 69.1k
 Self-hosted Notion alternative built with Flutter and Rust. Rich document editing, grid databases, kanban boards, calendar views, and team wikis — all in one cross-platform app with native desktop (macOS, Windows, Linux) and mobile apps. Local-first data ownership, built-in AI assistant powered by your LLM of choice. AGPL-3.0.
 
@@ -290,6 +294,7 @@ The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit 
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Rowboat](./productivity/README.md) | Productivity | 10k ⭐ | 2026-04 |
 | [RealtimeSTT](./speech-to-text/README.md) | Speech to Text | 9.6k ⭐ | 2026-04 |
 | [AI-Trader](./financial-analysis/README.md) | Financial Analysis | 12.5k ⭐ | 2026-04 |
 | [Graphify](./agent-tools/README.md) | Agent Tools | 4.2k ⭐ | 2026-04 |
