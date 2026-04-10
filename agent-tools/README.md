@@ -31,3 +31,16 @@ Point Graphify at any folder and it builds a structured knowledge graph from eve
 **Why it's notable:** The core insight is that reading raw files is the wrong interface for understanding a large codebase — a knowledge graph captures *relationships*, not just content. The 71.5x token reduction claim is striking: instead of dumping thousands of lines into context, an agent queries the graph for what it actually needs. Supports Claude Code, Codex, OpenCode, OpenClaw, and Factory Droid — not locked to any single agent. Transparent confidence scoring (EXTRACTED / INFERRED / AMBIGUOUS tags on every relationship) means you know when the graph is certain vs. guessing. 4.2k stars, v0.3.4 released April 7, 2026 — active and shipping.
 
 ---
+
+### [agent-skills](https://github.com/addyosmani/agent-skills) ⭐ 11.9k
+
+**Production-grade engineering workflows for AI coding agents — 20 skills across the full development lifecycle.**
+
+Structures software engineering into 6 phases (Define → Plan → Build → Verify → Review → Ship) with 20 purpose-built skills covering each step. Drop it into your agent via a single slash command and it brings 3 engineering personas, 4 reference checklists, and 7 slash commands that encode real production discipline: Hyrum's Law awareness, trunk-based development, API contract verification, and pre-flight deployment checklists. Works with Claude Code, Cursor, Gemini CLI, Windsurf, OpenCode, and GitHub Copilot. By Addy Osmani (engineering lead at Google Chrome).
+
+**Stack:** Shell (workflow definitions and slash command scripts)
+**License:** MIT
+
+**Why it's notable:** Most "AI coding tips" resources are informal advice. agent-skills is a structured engineering system — each skill has explicit inputs, step-by-step workflows, verification requirements, and red flag indicators. The 6-phase lifecycle maps to how real engineering teams ship software, not how tutorials teach it. Cross-agent support means it's not locked to any one tool. 11.9k stars and 1.4k forks signals this resonated broadly — developers recognize the gap between "AI writes code" and "AI ships production-quality code", and this is one of the most serious attempts to close it.
+
+---
