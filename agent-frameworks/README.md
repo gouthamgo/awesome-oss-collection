@@ -57,3 +57,16 @@ AutoGen builds multi-agent systems around an event-driven, message-passing archi
 **Why it's notable:** CrewAI maps to how humans think about teams. AutoGen maps to how distributed systems engineers think about services — message passing, event streams, independent processes. The architectural difference matters at scale: AutoGen agents can run on separate machines, handle async workflows, and be mixed across Python and .NET codebases. The no-code Studio lowers the floor for non-engineers. Microsoft-backed at 56.2k stars with 471 open issues — a well-maintained, enterprise-tested project that predates most of the current agent framework wave.
 
 ---
+
+### [hermes-agent](https://github.com/nousresearch/hermes-agent) ⭐ 51.8k
+
+**The self-improving AI agent from Nous Research — deploy it, and it learns.**
+
+hermes-agent is a continuously running autonomous agent with a learning loop at its core: it creates new skills from experience, builds a persistent user model over time, and improves its own behaviour without manual updates. Out of the box it connects to Telegram, Discord, Slack, WhatsApp, and Signal; schedules tasks via cron; and exposes a terminal interface for direct interaction. Flexible LLM backend with native xAI/Grok support alongside standard providers. Deploy via Docker, SSH, or serverless.
+
+**Stack:** Python 93.9%, Docker, multi-LLM
+**License:** MIT
+
+**Why it's notable:** Every other framework in this category gives you primitives or platforms to *build* agents. hermes-agent *is* the agent — you deploy it and it runs, learns, and evolves autonomously. The self-improvement loop (skills synthesised from experience rather than hand-coded) is what sets it apart architecturally: the agent you have tomorrow is smarter than the one you deployed today. 51.8k stars and 6.7k forks from Nous Research (one of the most respected independent AI research labs) puts serious credibility behind the concept. Committed April 11, 2026 — actively shipping.
+
+---

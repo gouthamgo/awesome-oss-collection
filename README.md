@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **30 categories · 49 projects** — growing over time
+> **31 categories · 51 projects** — growing over time
 
 ```
 Collection Hub
@@ -42,7 +42,8 @@ Collection Hub
 │   ├── CrewAI (46.8k ⭐) — multi-agent with roles, goals, backstories
 │   ├── DSPy (33k ⭐) — program LLMs instead of prompting them
 │   ├── DeerFlow (32.6k ⭐) — deployable super agent platform with sandbox + memory
-│   └── AutoGen (56.2k ⭐) — Microsoft's event-driven distributed multi-agent framework
+│   ├── AutoGen (56.2k ⭐) — Microsoft's event-driven distributed multi-agent framework
+│   └── hermes-agent (51.8k ⭐) — self-improving autonomous agent, learns from experience
 ├── 🏗️ LLM App Builder
 │   ├── Dify (134k ⭐) — visual workflow builder for LLM applications
 │   ├── AnythingLLM (56.7k ⭐) — self-hosted AI workspace, chat with your docs
@@ -85,10 +86,12 @@ Collection Hub
 │   └── Rowboat (10k ⭐) — local-first AI coworker, emails + meetings → knowledge graph → action
 ├── 🎬 Automated Video
 │   └── RedditVideoMakerBot (8.7k ⭐) — turn any Reddit thread into a TikTok/Shorts video with one command
-└── 🧰 Agent Tools
-    ├── Agent-Reach (15.4k ⭐) — give AI agents internet access across 14+ platforms, zero API cost
-    ├── Graphify (4.2k ⭐) — turn any codebase into a queryable knowledge graph, 71.5x token reduction
-    └── agent-skills (11.9k ⭐) — 20 production engineering skills across 6 phases, multi-agent
+├── 🧰 Agent Tools
+│   ├── Agent-Reach (15.4k ⭐) — give AI agents internet access across 14+ platforms, zero API cost
+│   ├── Graphify (4.2k ⭐) — turn any codebase into a queryable knowledge graph, 71.5x token reduction
+│   └── agent-skills (11.9k ⭐) — 20 production engineering skills across 6 phases, multi-agent
+└── 📲 Social Media
+    └── Postiz (28.1k ⭐) — self-hosted Buffer alternative, 15+ platforms, AI-assisted scheduling
 ```
 
 ---
@@ -108,7 +111,7 @@ Collection Hub
 | [🌐 web-browsers](./web-browsers/README.md) | 1 | Independent browser engines built from scratch |
 | [📱 on-device-ai](./on-device-ai/README.md) | 1 | Run AI locally on mobile and edge — no cloud required |
 | [🧠 local-llm](./local-llm/README.md) | 4 | Run open-source LLMs locally — personal use to production serving |
-| [🕸️ agent-frameworks](./agent-frameworks/README.md) | 4 | Frameworks for building and orchestrating AI agents |
+| [🕸️ agent-frameworks](./agent-frameworks/README.md) | 5 | Frameworks for building, orchestrating, and deploying AI agents |
 | [🏗️ llm-app-builder](./llm-app-builder/README.md) | 3 | Platforms for building and deploying LLM-powered applications |
 | [🕷️ web-scraping](./web-scraping/README.md) | 1 | Extract structured, LLM-ready data from any website |
 | [📚 rag-frameworks](./rag-frameworks/README.md) | 2 | Retrieval-Augmented Generation — knowledge graph and full platform |
@@ -127,6 +130,7 @@ Collection Hub
 | [📝 productivity](./productivity/README.md) | 2 | Self-hosted workspaces and AI coworkers — notes, docs, and persistent knowledge |
 | [🎬 automated-video](./automated-video/README.md) | 1 | Automate short-form video creation from Reddit and online content — no editing needed |
 | [🧰 agent-tools](./agent-tools/README.md) | 3 | Extend AI coding agents with internet access, knowledge graphs, and engineering workflows |
+| [📲 social-media](./social-media/README.md) | 1 | Self-hosted social media scheduling and management across 15+ platforms |
 
 ---
 
@@ -283,6 +287,12 @@ Self-hosted Notion alternative built with Flutter and Rust. Rich document editin
 ### [Agent-Reach](./agent-tools/README.md#agent-reach) ⭐ 15.4k
 Give your AI coding agent internet access across Twitter, Reddit, YouTube, GitHub, Bilibili, and 9+ more platforms with zero API costs. One install command bundles yt-dlp, twitter-cli, Jina Reader, and RSS parsers into a unified CLI agents can call. Works with Claude Code, Cursor, Windsurf, and OpenClaw. MIT, 1.3k forks.
 
+### [hermes-agent](./agent-frameworks/README.md#hermes-agent) ⭐ 51.8k
+Nous Research's self-improving autonomous agent. Deploys continuously, creates new skills from experience, maintains persistent user memory, and connects to Telegram, Discord, Slack, WhatsApp, and Signal out of the box. The agent you have tomorrow is smarter than the one you deployed today. MIT, 6.7k forks.
+
+### [Postiz](./social-media/README.md#postiz) ⭐ 28.1k
+Self-hosted Buffer alternative — schedule across 15+ social platforms (Instagram, X, TikTok, LinkedIn, Discord, and more), analyse metrics, collaborate with teams, and optimise content with AI. Temporal for workflow orchestration means no silent scheduling failures. AGPL-3.0, 5k forks.
+
 ### [agent-skills](./agent-tools/README.md#agent-skills) ⭐ 11.9k
 Addy Osmani's production engineering workflow system for AI coding agents. 20 skills, 6 phases (Define → Plan → Build → Verify → Review → Ship), 7 slash commands. Encodes real engineering discipline — Hyrum's Law, trunk-based dev, deployment checklists. Works with Claude Code, Cursor, Gemini CLI, Windsurf, OpenCode, and GitHub Copilot. MIT.
 
@@ -298,6 +308,8 @@ The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit 
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [hermes-agent](./agent-frameworks/README.md) | Agent Frameworks | 51.8k ⭐ | 2026-04 |
+| [Postiz](./social-media/README.md) | Social Media | 28.1k ⭐ | 2026-04 |
 | [agent-skills](./agent-tools/README.md) | Agent Tools | 11.9k ⭐ | 2026-04 |
 | [Rowboat](./productivity/README.md) | Productivity | 10k ⭐ | 2026-04 |
 | [RealtimeSTT](./speech-to-text/README.md) | Speech to Text | 9.6k ⭐ | 2026-04 |
