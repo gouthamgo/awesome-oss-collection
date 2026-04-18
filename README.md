@@ -6,7 +6,7 @@ A curated personal collection of open-source projects worth knowing about — or
 
 ## Collection Overview
 
-> **31 categories · 51 projects** — growing over time
+> **31 categories · 52 projects** — growing over time
 
 ```
 Collection Hub
@@ -70,7 +70,8 @@ Collection Hub
 │   ├── Strix (21.3k ⭐) — autonomous AI agents that find and validate vulnerabilities
 │   └── Garak (7.4k ⭐) — LLM vulnerability scanner for jailbreaks and prompt injection
 ├── 🎤 Voice Cloning
-│   └── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
+│   ├── LuxTTS (3.2k ⭐) — 48kHz voice cloning at 150x realtime on ~1GB VRAM
+│   └── Voicebox (20.5k ⭐) — open-source voice synthesis studio, 5 engines, timeline editor, REST API
 ├── 🏢 AI Operations
 │   └── Paperclip (35.9k ⭐) — run AI agent teams like a company, with org charts and budgets
 ├── 🎨 AI Generation
@@ -121,7 +122,7 @@ Collection Hub
 | [🛠️ ai-dev-tools](./ai-dev-tools/README.md) | 3 | AI-augmented development workflows — spec, plan, implement |
 | [🧪 testing](./testing/README.md) | 1 | Auto-generate tests and mocks from real traffic — no instrumentation needed |
 | [🔐 security-testing](./security-testing/README.md) | 2 | Pen testing for apps and LLM vulnerability scanning |
-| [🎤 voice-cloning](./voice-cloning/README.md) | 1 | Local voice cloning — high-fidelity 48kHz output, no cloud required |
+| [🎤 voice-cloning](./voice-cloning/README.md) | 2 | Local voice cloning — model library and full studio app, no cloud required |
 | [🏢 ai-operations](./ai-operations/README.md) | 1 | Orchestrate and govern AI agent teams at the organisational level |
 | [🎨 ai-generation](./ai-generation/README.md) | 1 | Node-based visual pipelines for AI image, video, audio, and 3D generation |
 | [📡 monitoring](./monitoring/README.md) | 1 | Self-hosted uptime and performance monitoring with alerting |
@@ -287,6 +288,9 @@ Self-hosted Notion alternative built with Flutter and Rust. Rich document editin
 ### [Agent-Reach](./agent-tools/README.md#agent-reach) ⭐ 15.4k
 Give your AI coding agent internet access across Twitter, Reddit, YouTube, GitHub, Bilibili, and 9+ more platforms with zero API costs. One install command bundles yt-dlp, twitter-cli, Jina Reader, and RSS parsers into a unified CLI agents can call. Works with Claude Code, Cursor, Windsurf, and OpenClaw. MIT, 1.3k forks.
 
+### [Voicebox](./voice-cloning/README.md#voicebox) ⭐ 20.5k
+Open-source voice synthesis studio — clone voices, generate speech, edit multi-voice timelines, apply 8 audio effects, all locally. Tauri desktop app + FastAPI backend + React UI. Five engines including LuxTTS, built-in REST API for voice-powered apps. MIT.
+
 ### [hermes-agent](./agent-frameworks/README.md#hermes-agent) ⭐ 51.8k
 Nous Research's self-improving autonomous agent. Deploys continuously, creates new skills from experience, maintains persistent user memory, and connects to Telegram, Discord, Slack, WhatsApp, and Signal out of the box. The agent you have tomorrow is smarter than the one you deployed today. MIT, 6.7k forks.
 
@@ -308,6 +312,7 @@ The tool that spawned the "Reddit content on TikTok" genre. Give it a subreddit 
 
 | Project | Category | Stars | Added |
 |---|---|---|---|
+| [Voicebox](./voice-cloning/README.md) | Voice Cloning | 20.5k ⭐ | 2026-04 |
 | [hermes-agent](./agent-frameworks/README.md) | Agent Frameworks | 51.8k ⭐ | 2026-04 |
 | [Postiz](./social-media/README.md) | Social Media | 28.1k ⭐ | 2026-04 |
 | [agent-skills](./agent-tools/README.md) | Agent Tools | 11.9k ⭐ | 2026-04 |
