@@ -2,6 +2,11 @@
 
 A curated personal collection of open-source projects worth knowing about — organized by use case, with enough context to understand *why* each one matters.
 
+![Projects](https://img.shields.io/badge/projects-52-blue?style=flat-square)
+![Categories](https://img.shields.io/badge/categories-31-blueviolet?style=flat-square)
+![License](https://img.shields.io/github/license/gouthamgo/awesome-oss-collection?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/gouthamgo/awesome-oss-collection?style=flat-square)
+
 ---
 
 ## Collection Overview
